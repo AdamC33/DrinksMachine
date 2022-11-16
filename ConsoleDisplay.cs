@@ -21,4 +21,10 @@ static class ConsoleDisplay
         Console.WriteLine("Preparing " + selectionToDrink[selection] + ". Please wait...");
         Thread.Sleep(5000);
     }
+    public static void OutOfIngredients()
+    {
+        Console.Clear();
+        Console.WriteLine("Error\nSorry, we have run out of the ingredients needed to make that drink.\nPlease choose another one.");
+        Thread.Sleep(5000);
+    }
 }
